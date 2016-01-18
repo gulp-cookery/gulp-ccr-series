@@ -1,19 +1,21 @@
 {
   "name": "gulp-ccr-series",
   "version": "0.1.0",
-  "description": "Configurable gulp recipe plugin that run the functions in the tasks array in series, each one running once the previous function has completed.",
+  "description": "Run the functions in the tasks array in series, each one running once the previous function has completed. A cascading configurable gulp recipe for gulp-chef.",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gulp-ccr/gulp-ccr-series.git"
+    "url": "git+https://github.com/gulp-cookery/gulp-ccr-series.git"
   },
   "keywords": [
     "gulp",
     "gulp 4.0",
     "gulp-ccr",
+	"gulp-cookery",
+	"gulp-chef",
     "configurable-gulp-recipe",
     "configurable-gulp-recipes",
     "sequence",
@@ -36,17 +38,15 @@
   "author": "Amobiz",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gulp-ccr/gulp-ccr-series/issues"
+    "url": "https://github.com/gulp-cookery/gulp-ccr-series/issues"
   },
-  "homepage": "https://github.com/gulp-ccr/gulp-ccr-series#readme",
+  "homepage": "https://github.com/gulp-cookery/gulp-ccr-series#readme",
   "devDependencies": {
     "mocha": "^2.3.4",
     "mocha-cases": "^0.1.4"
   },
   "dependencies": {
     "async": "^1.5.0",
-    "async-done": "^1.2.0",
-    "gulp-ccr-helper": "git+https://github.com/gulp-ccr/gulp-ccr-helper.git",
-    "gulp-util": "^3.0.7"
+    "async-done": "^1.2.0"
   }
 }

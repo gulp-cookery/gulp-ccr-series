@@ -83,7 +83,7 @@ function series(done) {
 
 series.schema = {
 	title: 'series',
-	description: 'Run the functions in the tasks array in series, each one running once the previous function has completed.',
+	description: 'Run sub tasks in series, each one running once the previous task has completed.',
 	type: 'object',
 	properties: {}
 };

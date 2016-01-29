@@ -1,17 +1,12 @@
 'use strict';
 
-/**
- * Recipe:
- * series
- *
- * Ingredients:
- * async, asnyc-done
- *
- * Note:
- *  Some kind of non-stream version of queue() recipe.
- *
- * @param done
- */
+var schema = {
+	title: 'series',
+	description: 'Run sub tasks in series, each one running once the previous task has completed.',
+	type: 'object',
+	properties: {}
+};
+
 function series(done) {
 	var async = require('async');
 	var asyncDone = require('async-done');
@@ -81,13 +76,6 @@ function series(done) {
 	}
 }
 
-series.schema = {
-	title: 'series',
-	description: 'Run sub tasks in series, each one running once the previous task has completed.',
-	type: 'object',
-	properties: {}
-};
-
-series.type = 'flow';
-
 module.exports = series;
+module.exports.schema = schema;
+module.exports.type = 'flow';
